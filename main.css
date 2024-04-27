@@ -1,0 +1,290 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    outline: none;
+    list-style-type: none;
+}
+
+h1{
+    color: rgba(255, 255, 255, 0.918);
+    font-family: 'Syne', sans-serif;
+    text-align: end;
+    padding: 15px 30px 10px 0px;
+    background: rgba(0, 0, 0, 0.973);
+    width: 100%;
+}
+
+.seccion1{
+    display: flex;
+    padding: 30px 30px 90px 30px;
+    background: rgba(0, 0, 0, 0.973);
+}
+
+
+.seccion1 .portada span{
+    color: orangered;
+    font-family: 'Syne', sans-serif;
+    font-size: 115px;
+    display: flex;
+    width: 50vw;
+}
+
+.relleno{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    width: 50vw;
+    padding-right: 30px;
+}
+
+.relleno a{
+    display: flex;
+    background: black;
+    color: orangered;
+    border: 0.5px solid orangered;
+    border-radius: 20px;
+    padding: 20px 40px 20px 40px;
+    font-family:'League Spartan', sans-serif;
+    text-decoration: none;
+}
+
+.seccion{
+    display: flex;
+    padding: 90px 40px 90px 25px;
+    background: rgba(0, 0, 0, 0.973);
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+
+}
+
+.seccion .logo{
+    display: flex;
+    align-items: center;
+    width: 50vw;
+    padding-left: 80px;
+}
+
+.seccion .logo img{
+    width: 250px;
+    height: 250px;
+}
+
+.seccion .vision{
+    display: flex;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.705);
+    font-family: 'League Spartan', sans-serif;
+}
+
+.seccion .vision span{
+    display: flex;
+    font-size: 25px;
+    padding-right: 60px;
+}
+
+.seccion2{
+    display: flex;
+    background-image: url(16.jpg);
+    height: 40vw;
+    width: 100%;
+    justify-content: end;
+    padding-right: 70px;
+    padding-top: 20px;
+}
+
+.seccion2 .pasos{
+    background: rgba(250, 242, 242, 0.897);
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    font-family: 'Syne', sans-serif;
+}
+
+.seccion2 .pasos p{
+    padding: 40px 20px 40px 20px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.seccion2 .pasos .puntos li{
+    padding: 25px;
+    font-size: 13px;
+    color: rgb(68, 56, 52);
+    border: 1px solid rgb(68, 56, 52);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#seccion3 {
+    color: orangered;
+    background: rgba(0, 0, 0, 0.973);
+    padding-top: 50px;
+}
+
+#seccion3 h3{
+    font-size: 90px;
+    font-family: 'Syne', sans-serif;
+    text-align: end;
+    padding-right: 10px;
+    font-style: oblique;
+    background: orangered;
+    color:rgba(0, 0, 0, 0.973);
+}
+
+.planes {
+    display: flex;         /* Activa Flexbox para este contenedor */
+    justify-content: space-between; /* Espacia los elementos hijos igualmente */
+    align-items: center;   /* Alinea los elementos hijos verticalmente en el centro */
+    font-family: 'Syne', sans-serif;
+}
+
+.planes > div {
+    flex-grow: 1;          /* Permite que cada elemento hijo crezca de manera que utilice el espacio disponible */
+    text-align: center;    /* Centra el texto dentro de cada plan */
+    margin: 30px 10px;        /* Añade un margen horizontal para asegurar que no estén pegados */
+    border: 1px solid orangered;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.planes h4{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.planes span{
+    color: orangered;
+    margin: 0px 20px 20px 20px;
+}
+
+.detalle1 li{
+    color: white;
+    list-style:circle;
+    text-align: start;
+}
+.detalle2 li{
+    color: white;
+    list-style:circle;
+    text-align: start;
+}
+
+.detalle3 li{
+    color: white;
+    list-style:circle;
+    text-align: start ;
+}
+
+.seccion4 {
+    background: rgba(0, 0, 0, 0.973);
+    font-family: 'Syne', sans-serif;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.seccion4 h5{
+    padding-bottom: 20px;
+}
+
+.seccion4 .clientes{
+    display: flex;
+    flex-direction: row;
+}
+
+.seccion4 .clientes img{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.seccion4 a{
+    color: orangered;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+@media (max-width: 900px){
+
+h1{
+    text-align: center;
+}
+
+.container{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+
+h1{
+        justify-content: center;
+        padding: 50px 0px 10px 0px;
+        background: rgba(0, 0, 0, 0.973);
+        font-size: 40px;
+    }
+
+.seccion1{
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+.seccion1 .portada span{
+        font-size: 60px;
+        padding: 15px 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+.relleno{
+        justify-content: center;
+        padding: 60px 0px 20px 0px;
+    }
+
+.relleno a{
+    font-size: 15px;
+}
+
+.seccion, .planes, .seccion4 .clientes {
+        flex-direction: column;
+        align-items: center;  /* Centra los elementos en el eje cruzado */
+        width: 100%;          /* Asegura que cada sección ocupe todo el ancho disponible */
+    }
+
+.seccion .logo {
+        width: 100%;  /* Asegura que estos elementos usen todo el ancho disponible */     
+        justify-content: center; /* Centra los elementos horizontalmente */
+        padding: 20px; /* Añade un poco de padding para mejor visualización */
+        align-items: center;
+    }
+
+.seccion .vision span{
+        justify-content: center;
+        width: 100%;
+        padding: 20px 0px 10px 0px;
+        text-align: center;
+    }
+
+.planes > div {
+        
+     flex-grow: 0; /* Desactiva el crecimiento automático en móviles */
+     width: 90%; /* Ajusta el ancho de cada plan para ocupar más espacio */
+     margin: 20px 0px 10px 0px;
+    }
+
+#seccion3 {
+    padding-top: 20px;
+}
+
+#seccion3 h3 {
+        font-size: 45px; /* Reduce el tamaño del título en la sección de planes */
+    }
+
+.seccion4 .clientes {
+       flex-direction: column; /* Cambia la disposición de clientes a vertical */
+    }
+
+
+}
