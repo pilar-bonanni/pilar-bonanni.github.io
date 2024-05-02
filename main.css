@@ -6,26 +6,36 @@
     list-style-type: none;
 }
 
+@font-face {
+    font-family: 'blackmango';
+    src: url('black/BlackMango-Light.ttf') format('TrueType'); /* Ajusta el formato según sea necesario */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 h1{
-    color: rgba(255, 255, 255, 0.918);
-    font-family: 'Syne', sans-serif;
-    text-align: end;
-    padding: 15px 30px 10px 0px;
-    background: rgba(0, 0, 0, 0.973);
-    width: 100%;
+    color: white;
+    padding-right: 80px;
+    padding-top: 30px;
+    font-family: 'blackmango', sans-serif;
+    display: flex;
+    justify-content: end;
+    background: rgba(102, 65, 35, 0.938);
+
 }
 
 .seccion1{
     display: flex;
-    padding: 30px 30px 90px 30px;
-    background: rgba(0, 0, 0, 0.973);
+    padding: 3rem 2rem 8rem 2rem;
+    background: rgba(102, 65, 35, 0.938);
 }
 
 
 .seccion1 .portada span{
-    color: orangered;
-    font-family: 'Syne', sans-serif;
-    font-size: 115px;
+    color: white;
+    font-family: 'blackmango', sans-serif;
+    font-size: 6.5rem;
     display: flex;
     width: 50vw;
 }
@@ -40,98 +50,79 @@ h1{
 
 .relleno a{
     display: flex;
-    background: black;
-    color: orangered;
-    border: 0.5px solid orangered;
+    background: rgba(255, 255, 255, 0.068);
+    color: white;
+    font-size: 0.9rem;
+    border: 0.5px solid white;
     border-radius: 20px;
-    padding: 20px 40px 20px 40px;
-    font-family:'League Spartan', sans-serif;
+    padding: 1.25rem 2.5rem 1.25rem 2.5rem;
+    font-family: "Raleway", sans-serif;
     text-decoration: none;
 }
 
 .seccion{
     display: flex;
-    padding: 90px 40px 90px 25px;
-    background: rgba(0, 0, 0, 0.973);
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
+    padding: 2rem 0rem 3rem 3rem;
+    background: rgba(102, 65, 35, 0.938);
 
+}
+
+.seccion h5{
+    font-family: 'blackmango', sans-serif;
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+    font-size: 3rem;
 }
 
 .seccion .logo{
     display: flex;
+    display: inline-block;
+    justify-content: center;
     align-items: center;
-    width: 50vw;
-    padding-left: 80px;
-}
-
-.seccion .logo img{
-    width: 250px;
-    height: 250px;
+    width: 40vw;
+    color:rgba(255, 255, 255, 0.822) ;
+    padding-left: 3rem;
+    padding-right: 1.5rem;
 }
 
 .seccion .vision{
     display: flex;
+    display: inline-block;
     width: 50vw;
     justify-content: center;
     align-items: center;
-    color: rgba(255, 255, 255, 0.705);
-    font-family: 'League Spartan', sans-serif;
+    color:rgba(255, 255, 255, 0.822) ;
+    padding-left: 1.5rem;
+    padding-right: 3rem;
 }
 
-.seccion .vision span{
+.seccion .logo span, .seccion .vision span{
     display: flex;
     font-size: 25px;
-    padding-right: 60px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
 }
 
-.seccion2{
-    display: flex;
-    background-image: url(16.jpg);
-    height: 40vw;
-    width: 100%;
-    justify-content: end;
-    padding-right: 70px;
-    padding-top: 20px;
-}
-
-.seccion2 .pasos{
-    background: rgba(250, 242, 242, 0.897);
-    width: 400px;
-    height: 500px;
-    border-radius: 10px;
-    font-family: 'Syne', sans-serif;
-}
-
-.seccion2 .pasos p{
-    padding: 40px 20px 40px 20px;
-    font-size: 25px;
-    text-align: center;
-}
-
-.seccion2 .pasos .puntos li{
-    padding: 25px;
-    font-size: 13px;
-    color: rgb(68, 56, 52);
-    border: 1px solid rgb(68, 56, 52);
-    border-radius: 5px;
-    margin: 10px;
+/* Estilo inicial de los elementos */
+.seccion main {
+    opacity: 0; /* Inicia invisible */
+    transition: opacity 2s ease-in-out; /* Transición suave de la opacidad */
 }
 
 #seccion3 {
-    color: orangered;
-    background: rgba(0, 0, 0, 0.973);
-    padding-top: 50px;
+    background: rgba(102, 65, 35, 0.938);
+    padding-top: 2rem;
+    padding-bottom: 1rem;
 }
 
 #seccion3 h3{
-    font-size: 90px;
-    font-family: 'Syne', sans-serif;
-    text-align: end;
-    padding-right: 10px;
+    font-size: 2rem;
+    font-family: 'blackmango', sans-serif;
+    text-align: center;
+    padding-bottom: 2rem;
     font-style: oblique;
-    background: orangered;
-    color:rgba(0, 0, 0, 0.973);
+    color:rgba(245, 245, 245, 0.932);
 }
 
 .planes {
@@ -145,49 +136,39 @@ h1{
     flex-grow: 1;          /* Permite que cada elemento hijo crezca de manera que utilice el espacio disponible */
     text-align: center;    /* Centra el texto dentro de cada plan */
     margin: 30px 10px;        /* Añade un margen horizontal para asegurar que no estén pegados */
-    border: 1px solid orangered;
+    border: 1px solid rgba(150, 116, 89, 0.767);;
     border-radius: 10px;
     padding: 20px;
 }
 
 .planes h4{
-    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
     margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.925);
 }
 
-.planes span{
-    color: orangered;
-    margin: 0px 20px 20px 20px;
-}
-
-.detalle1 li{
-    color: white;
+.detalle1 span, .detalle2 span, .detalle3 span{
+    color: rgba(245, 245, 245, 0.911);
     list-style:circle;
     text-align: start;
-}
-.detalle2 li{
-    color: white;
-    list-style:circle;
-    text-align: start;
-}
-
-.detalle3 li{
-    color: white;
-    list-style:circle;
-    text-align: start ;
+    font-family: "Raleway", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 150;
 }
 
 .seccion4 {
-    background: rgba(0, 0, 0, 0.973);
+    background: rgba(102, 65, 35, 0.938);
     font-family: 'Syne', sans-serif;
-    font-size: 40px;
-    color: white;
+    font-size: 2rem;
+    color: rgba(245, 245, 245, 0.911);
     text-align: center;
     padding: 20px;
 }
 
 .seccion4 h5{
     padding-bottom: 20px;
+    font-family: 'blackmango', sans-serif;
 }
 
 .seccion4 .clientes{
@@ -202,17 +183,12 @@ h1{
 }
 
 .seccion4 a{
-    color: orangered;
+    color: rgba(245, 245, 245, 0.911);
     text-decoration: none;
     font-size: 15px;
 }
 
 @media (max-width: 900px){
-
-h1{
-    text-align: center;
-}
-
 .container{
        display: flex;
        flex-direction: column;
