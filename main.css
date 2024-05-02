@@ -223,23 +223,38 @@ h1{
     font-size: 15px;
 }
 
+.seccion{
+    padding: 0;
+}
+
 .seccion, .planes, .seccion4 .clientes {
         flex-direction: column;
         align-items: center;  /* Centra los elementos en el eje cruzado */
         width: 100%;          /* Asegura que cada sección ocupe todo el ancho disponible */
     }
 
+.seccion h5{
+    text-align: center;
+    padding: 0rem 0rem .5rem 0rem;
+}    
+
 .seccion .logo {
         width: 100%;  /* Asegura que estos elementos usen todo el ancho disponible */     
-        justify-content: center; /* Centra los elementos horizontalmente */
+        text-align: center; /* Centra los elementos horizontalmente */
         padding: 20px; /* Añade un poco de padding para mejor visualización */
         align-items: center;
     }
 
+.seccion .vision{
+    width: 100%;  /* Asegura que estos elementos usen todo el ancho disponible */     
+    justify-content: center; /* Centra los elementos horizontalmente */
+    padding: 20px; /* Añade un poco de padding para mejor visualización */
+    align-items: center;
+}
+
 .seccion .vision span{
         justify-content: center;
         width: 100%;
-        padding: 20px 0px 10px 0px;
         text-align: center;
     }
 
