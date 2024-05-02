@@ -265,6 +265,10 @@ h1{
      margin: 20px 0px 10px 0px;
     }
 
+.detalle1, .detalle2, .detalle3{
+    font-size: 1.5rem;
+}
+
 #seccion3 {
     padding-top: 20px;
 }
